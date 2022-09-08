@@ -1,0 +1,700 @@
+@media(min-width: 1440px) {
+    .carousel-img {
+        width: 100%;
+    }
+    .gsb-calendar-month-event-card {
+        height: 80px;
+        width: 280px;
+    }
+    .gsb-calendar-month-event-card-date {
+        font-size: 24px;
+    }
+    .gsb-calendar-month-event-card p {
+        width: 180px;
+        font-size: 16px;
+    }
+    #athletics {
+        width: 170px;
+    }
+    #valentin, #volleyball {
+        width: 180px;
+    }
+}
+@media(max-width: 1440px) {
+    .gsb-calendar-month-event-card {
+        height: 80px;
+        width: 250px;
+    }
+    .gsb-calendar-month-event-card-date {
+        font-size: 24px;
+    }
+    .gsb-calendar-month-event-card p {
+        width: 180px;
+        font-size: 16px;
+    }
+    #athletics {
+        width: 170px;
+    }
+    #valentin, #volleyball {
+        width: 180px;
+    }
+    .faq__wrapper {
+        
+        grid-template-columns: repeat(2, minmax(300px, 654px));
+    }
+    .faq__header {
+        font-size: 32px;
+    }
+    .faq__text__18 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1200px){
+     .slider__item h2 {
+        top:55%;
+        font-size: 45px;
+    } 
+    .gsb-pallete-block-heading-accent-red-bold {
+        font-size: 80px;
+    }
+    .gsb-light-pallete-subheader {
+        font-size: 32px;
+    }
+    .social__header {
+        font-size: 24px;
+    }
+    .social__wrapper {
+        grid-template-rows: repeat(2, 170px);
+        grid-auto-rows: minmax(170px, auto);
+    }
+    .faq__main__header {
+        margin-bottom: 70px;
+    }
+    .faq__header {
+        font-size: 24px;
+    }
+    .faq__wrapper{
+        grid-template-rows: 415px 280px 320px 263px 263px 405px;
+    }
+    .faq__text__20 {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .faq__text__18 {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .faq__ask {
+        
+        margin-top: 50px;
+    }
+   
+   
+}
+@media (max-width: 992px){
+    .container {
+        max-width: 720px;
+        
+    }
+    .gsb-contacts-block-info {
+        margin-left: 0px;
+    }
+    .carousel-item {
+        width: 991px;
+        height: 370px;
+    }
+    .carousel-item img {
+        max-width: 991px;
+    }
+    .main__header {
+        font-size: 47px;
+        
+    }
+    .main__content {
+        width: 700px;
+        margin-top: 20px;
+        
+    }
+    .gsb-slogan h4 {
+        margin-top: 15px;
+        font-size: 26px;
+    }
+    .divider {
+        width: 670px;
+    }
+    .gsb-about-box h2{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .gsb-about-box p{
+        margin-bottom: 15px;
+        
+    }
+    .gsb-pallete-block {
+        width: 300px;
+    }
+    .gsb-pallete-block-heading {
+        font-size: 24px;
+    }
+    .gsb-main-pallete-block {
+        grid-template-columns: 300px 300px;
+        column-gap: 55px;
+    }
+    .gsb-pallete-block-heading {
+        font-size: 20px;
+    }
+     .slider__item h2 {
+        top:55%;
+        font-size: 30px;
+    } 
+    .gsb-block-header{
+        font-size: 30px;
+        margin-bottom: 45px;
+    }
+    .gsb-action-block {
+        padding: 0;
+        text-align: left;
+        width: 650px;
+        margin-left: 35px;
+    }
+    .gsb-action-block a{
+        margin-top: 0;
+    }
+    /* .gsb-light-pallete{
+        width: 658px;
+    }
+    */
+    .small-block-menu-right {
+        margin-left: 0;
+    }
+    .gsb-pallete-block-menu-col {
+        margin-bottom: 20px;
+    }
+    .social__wrapper {
+        grid-template-rows: repeat(3, 170px);
+        grid-template-columns: repeat(2, minmax(200px, auto));
+        grid-auto-rows: minmax(170px, auto);
+    }
+    .studcouncil__link a{
+        font-size: 20px;
+    }
+    #head_of_education {
+        margin-top: 0px;
+    }
+    /* .studcouncil__link {
+        width: 35px;
+        height: 35px;
+    }
+     */
+     .faq__wrapper {
+        grid-template-rows: 490px 360px 430px 320px 380px 455px;
+        row-gap: 25px;
+        column-gap: 25px;
+     }
+     .faq__text__16{
+        font-size: 16px;
+        line-height: 18px;
+    
+    }
+    .gsb-contacts-block-details {
+        width: unset;
+    }
+
+}
+@media (max-width: 768px){
+    .container {
+        max-width: 540px;
+    }
+    .carousel-item {
+        width: 768px;
+       
+    }
+    .carousel-item img {
+        max-width: 768px;
+    }
+    
+    .main__header{
+        font-size: 38px;
+    }
+    .main__content {
+        width: 540px;
+        margin-top: 20px;
+        
+    }
+    .gsb-slogan h4 {
+        margin-top: 10px;
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+    .divider {
+        display: none;
+    }
+    .gsb-button-main {
+        width: 220px;
+        height: 52px;
+    }
+    .gsb-button-main-inner {
+        font-size: 14px;
+    }
+    .carousel-item {
+        width: 768px;
+        height: 288px;
+    }
+    .header-nav {
+        margin-right: 0;
+    }
+    .gsb-pallete-block {
+        width: 250px;
+    }
+    .gsb-main-pallete-block {
+        grid-template-columns: 250px 250px;
+        column-gap: 25px;
+        row-gap: 25px;
+    }
+    .news {
+        display: none;
+    }
+    .gsb-block-header{
+        margin-bottom: 30px;
+    }
+    .gsb-action-block {
+        margin-left: 15px;
+    }
+    .gsb-pallete-block-heading-accent-red-bold {
+        font-size: 65px;
+    }
+    .gsb-light-pallete{
+        padding: 12px;
+    }
+    .gsb-action-block a {
+        font-size: 40px;
+    }
+    #gsb-light-pallete-a {
+        margin-top: 25px;
+        font-size: 32px;
+    }
+    .std-header{
+        font-size: 60px;
+    }
+    .row {
+        margin-right: 0;
+    }
+    .social__main__header {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+    .social__wrapper {
+        column-gap: 20px;
+        grid-template-rows: repeat(3, 150px);
+    }
+    .social__header {
+        font-size: 20px;
+    }
+    .gsb-calendar-month-event-card {
+       
+        width: 240px;
+    }
+    .studcouncil__header {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .studcouncil__book{
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .faq__wrapper {
+        grid-template-columns:  minmax(280px, 540px);
+        grid-template-rows: auto;
+    }
+    .faq__main__header {
+        margin-bottom: 50px;
+    }
+    .faq__text{
+        font-size: 18px !important;
+    }
+    .st__header {
+        font-size: 28px;
+    }
+    .gsb-news-block-header h4 {
+        font-size: 20px;
+    }
+    .competition__title {
+        font-size: 20px;
+    }
+    .gsb-fwimg {
+        padding-bottom: 0px;
+       
+    }
+    .faq__request {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+
+       
+    }
+    .faq__request__text{
+        margin-bottom: 50px;
+    }
+    
+
+}
+
+@media (max-width: 576px){
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .carousel-item {
+        width: 100%;
+        height: 120px;
+       
+    }
+    .carousel-item img {
+        max-width: 100%;
+    }
+    .header-nav li {
+        font-size: 12px;
+    }
+    .header-nav li a {
+        margin-right: 10px;
+    }
+    .main__content {
+        width: 95%;
+        margin-top: 15px;
+    }
+    .main__header{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .gsb-slogan h4 {
+        display: none;
+    }
+    .gsb-button-main {
+        margin-top: 15px;
+        width: 42%;
+        height: 40px;
+        padding: 6px 10px;
+        position: absolute;
+        top: 100%;
+        margin-bottom: 20px;
+        background-color: #CC5A5A;
+        
+    }
+    .gsb-button-main-inner{
+        line-height: 15px;
+        
+    }
+    .gsb-button-main-inner a{
+        font-size: 9px;
+        line-height: 8%;
+        color:azure;
+    }
+   .gsb-main-pallete-block {
+       grid-template-columns: 250px;
+       grid-auto-rows: auto;
+       
+       column-gap: 0px;
+
+   }
+   .gsb-pallete-block {
+    margin-bottom: 0px;
+   }
+   .gsb-team-contact h4 {
+       font-size: 18px;
+   }
+   .gsb-team-contact div {
+    font-size: 16px;
+    }
+    .gsb-contacts-block-info{
+        margin-left: 15px;
+    }
+    .gsb-contacts-block-social-icon {
+        width: 40px;
+        height: 40px;
+        display: inline;
+    }
+    .gsb-contacts-block-details-contacts {
+        display: inline;
+    }
+    .gsb-contacts-block-details-contacts a {
+        font-size: 16px;
+    }
+    .gsb-contacts-block {
+        margin: 0 auto;
+    }
+    .gsb-contacts-block-social-icon{
+        margin-left: 25px;
+        margin-right: 5px;
+    }
+    .gsb-about-box h2 {
+        margin-top: 30px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .gsb-about-box p {
+        font-size: 16px;
+    }
+    .gsb-contacts-block-info {
+        width: 280px;
+    }
+    .row {
+        margin-right: 0;
+    }
+    .gsb-block-header{
+        margin-top: 55px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    #myCarousel8 .gsb-button-main {
+        background-color: #254A9B;
+    }
+    .gsb-pallete-block-heading-accent-red-bold {
+        font-size: 50px;
+    }
+    .gsb-light-pallete p {
+        font-size: 18px;
+    }
+    #gsb-light-pallete-a {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .rect1, .rect2, .rect3, .rect4, .rect5, .rect6, .rect7, .rect8, .rect9, .rect10, .rect11, .rect12 , .rect13 , .rect14 , .rect15 , .rect16 , .rect17 , .rect18 , .rect19 , .rect20 {
+        display: none;
+    }
+    .gsb-news-img {
+        height: 230px;
+    }
+    .gsb-action-block{
+        margin-left: 0;
+        text-align: center;
+    }
+    .gsb-action-block a {
+        font-size: 20px;
+        
+    }
+    .gsb-light-pallete-subheader {
+        font-size: 24px;
+    }
+    /* .gsb-light-pallete a {
+        font-size: 20px;
+    } */
+    .small-block-menu {
+        /* width: 600px; */
+        height: auto;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .curators-gsb{
+        font-size: 18px;
+        line-height: 0px;
+    }
+    .std-header {
+        font-size: 22px;
+    }
+    .link-menu {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    #mail-link {
+        font-size: 20px;
+    }
+    .img_mail{
+        width: 35px;
+        height: 35px;
+    }
+    .gsb-pallete-block-menu-col {
+        margin-left: 5px;
+    }
+    .curators__block {
+        width: 250px;
+        max-height: 456px;
+        min-height: 456px;
+    }
+    .curators__item {
+        height: 100px;
+        display: grid;
+        grid-template-columns: 50px 150px;
+        column-gap: 5px;
+        margin-top: 5px;
+    }
+    .curators__info {
+       
+        font-size: 10px;
+        
+    }
+    .curators__class {
+        margin-top: 3px;
+    }
+    .curators__info img {
+        width: 45px;
+        height: 45px;
+    }
+    .curators__link {
+        margin-top: 3px;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 95.2%;
+        color: #C94B57;
+        margin-left: 10px;
+    }
+    .curators__tg p {
+        display: inline;
+        font-size: 10px;
+    }
+    .curators__email {
+        margin-top: 5px;
+    }
+    .curators__programe {
+        margin-top: 5px;
+       
+    }
+    .curators__tg img {
+        width: 12px;
+        height: 12px;
+        margin-right: 3px;
+    }
+    .curators__email img {
+        width: 12px;
+        height: 12px;
+        margin-right: 3px;
+    }
+    .curators__link a {
+        font-size: 8px;
+    }
+    #myCarousel3 .gsb-button-main {
+        background-color: rgba(248, 180, 161);
+    }
+    .social__main__header {
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 60px;
+    }
+    .social__wrapper {
+        row-gap: 20px;
+        grid-template-rows: repeat(3, 100px);
+        grid-template-columns: 250px;
+        grid-auto-rows: 100px;
+        justify-content: center;
+        margin-bottom: 30px;
+
+    }
+    .social__header {
+        font-size: 16px;
+    }
+    .social__link {
+        width: 100px;
+        height: 25px;
+    }
+    .social__link a {
+        font-size: 10px;
+    }
+    .calendar__header {
+        margin-top: 70px;
+        font-size: 20px;
+        line-height: 114.7%;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 50px;
+    }
+    .gsb-calendar-row {
+        margin-left: 15%;
+    }
+    .studcouncil__header {
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 70px;
+    }
+    .studcouncil__img {
+        width: 20px;
+        height: 20px;
+    }
+    .studcouncil__link a {
+        font-size: 16px;
+    }
+    .faq__main__header {
+        margin-bottom: 20px;
+        font-size: 20px;
+        margin-top: 60px;
+    }
+    .faq__header {
+        font-size: 18px;
+    }
+    .faq__text{
+        font-size: 16px !important;
+    }
+    .faq__ask {
+        margin-top: 20px;
+        font-size: 20px ;
+    }
+    .faq__ask h2 {
+       
+        font-size: 20px ;
+    }
+    .st__header {
+        font-size: 20px;
+        margin-top: 60px;
+    }
+    .st__header_mini{
+        margin-top: 0 !important;
+    }
+    .gsb-team-contact h1 {
+        font-size: 25px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+    .st__leader p {
+        padding-bottom: 5px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .gsb-contacts-block-avatar {
+        width: 230px;
+        height: auto;
+    }
+    .gsb-team-contact h3 {
+        padding-top: 10px;
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+    .gsb-team-contact div {
+        font-size: 14px;
+       
+    }
+    /* .gsb-contacts-block-details{
+        width: 200px;
+    } */
+    .gsb-contacts-block-info {
+        width: 200px;
+    }
+    .gsb-contacts-block-info-contacts{
+        margin-top: 10px;
+    }
+    .st__img{
+        width: 20px;
+        height: 20px;
+    }
+    .link__tg img {
+        width: 20px;
+        height: 20px;
+    }
+    .competition__text {
+        font-size: 14px;
+        margin-top: 30px;
+    }
+    .competition__text p {
+        margin-bottom: 10px;
+    }
+    .competition__text__mini {
+        margin-top: 10px !important;
+    }
+    .gsb-news-block-header h4 {
+        font-size: 16px;
+    }
+    .gsb-team-contact h3 {
+        
+        font-size: 16px;
+    }
+}

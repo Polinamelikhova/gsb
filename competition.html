@@ -1,0 +1,2654 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>StudTeamGSB</title>
+        <meta name="description" content="StudTeamGSB"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+        
+       
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- <link href="carousel.css" rel="stylesheet"> -->
+        <!-- <link href="styles.css" rel="stylesheet">
+        <link href="media.css" rel="stylesheet"> -->
+        <style type="text/css">
+         #myCarousel1 .carousel-item {
+      background-color: #CC5A5A;
+    } 
+ul:not([class]) > *::before{
+    content: none;
+  } 
+ .row:before, .row:after {
+    content: none;
+    
+}
+    img {
+    max-width: unset;
+    }
+    .builder_content > *{
+      padding:0;
+    }
+    .content__inner > *{
+    padding: 0;
+    }
+    .pk-header__content{
+    display: none;
+    }
+    :link, :visited, .link {
+        text-decoration: none;
+        border-bottom: none; 
+        
+    }
+    .header-nav li {
+        margin-bottom: 0;
+    }
+    .carousel {
+      margin-bottom: 36px;
+    }
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+      z-index: 10;
+    }
+    
+    
+    /* Declare heights because of positioning of img element */
+    .carousel-item {
+      height: 540px;
+      
+    }  
+    .carousel-small  {
+      max-height: auto;
+    }
+    
+    
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+    
+    /* Center align the text within the three columns below the carousel */
+    .marketing .col-lg-4 {
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    /* rtl:begin:ignore */
+    .marketing .col-lg-4 p {
+      margin-right: .75rem;
+      margin-left: .75rem;
+    }
+    /* rtl:end:ignore */
+    
+    
+    /* Featurettes
+    ------------------------- */
+    
+    .featurette-divider {
+      margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+    }
+    
+    /* Thin out the marketing headings */
+    /* rtl:begin:remove */
+    .featurette-heading {
+      letter-spacing: -.05rem;
+    }
+    
+    /* rtl:end:remove */
+    
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+    
+    @media (min-width: 40em) {
+      /* Bump up size of carousel content */
+      .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+      }
+    
+      .featurette-heading {
+        font-size: 50px;
+      }
+    }
+    
+    @media (min-width: 62em) {
+      .featurette-heading {
+        margin-top: 7rem;
+      }
+    }
+    .carousel-control-next, .carousel-control-prev {
+    
+      width: 5%;
+      padding: 0;
+      color: #fff;
+      text-align: center;
+      background: 0 0;
+      border: 0;
+      opacity: 1;
+      transition: opacity .15s ease;
+    }
+    
+    
+    
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+    
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+    
+    .carousel-indicators-hidden {
+        display: none;
+    }
+    
+    .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+    
+    .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+    }
+    
+    .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+    }
+    
+    .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+    }
+    
+    .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /* .carousel-container {
+        background-color: #CC5A5A;
+        
+    } */
+    
+    .carousel-container-blue {
+        background-color: #254A9B;
+        
+    }
+    .carousel-container-orange {
+        background: rgba(248, 180, 161);
+        
+    }
+    .carousel-container-red {
+        background: rgba(231, 31, 60, 0.9);
+        
+    }
+    
+    .carousel-img {
+        opacity: 0.5;
+        overflow: hidden;
+        display: flex;
+        object-fit: cover;
+    }
+    
+    .header-nav {
+        font-weight: 400;
+        text-transform: uppercase;
+        color: black;
+        margin-right: 20px;
+        
+    }
+    
+    .header-nav li {
+        padding: 5px;
+        display: block;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .header-nav li a {
+        text-decoration: none;
+        color: black;
+        margin-right: 20px;
+    }
+    
+    .gsb-slogan h1 {
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    
+    .gsb-slogan h4 {
+        font-weight: 900;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 35px;
+        margin-top: 30px;
+        padding: 0;
+    }
+    
+    .gsb-slogan hr {
+        opacity: 0.75;
+    }
+    
+    .gsb-button-block {
+        margin-top: 32px;
+        border-spacing: 12px;
+        border-collapse: separate;
+    }
+    
+    .gsb-button-main {
+        background-color: azure;
+        width: 285px;
+        height: 62px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        display: flex;
+        padding: 12px 26px;
+        /* width: 100%; */
+    }
+    
+    .gsb-button-main-inner {
+        font-weight: 400;
+        font-size: 17px;
+        /* or 19px */
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 20px;
+        
+    }
+    
+    .gsb-button-main-inner a {
+        color: #CC5A5A;
+        text-decoration: none;
+    }
+    
+    .gsb-button-main-inner-orange a {
+        color: #F8B4A1;
+    }
+    
+    
+    .carousel-container-small {
+        height: 350px;
+    }
+    
+    .carousel-inner-small {
+        height: 350px;
+    }
+    
+    .carousel-img-small {
+        overflow: hidden;
+        display: flex;
+        justify-content: center center;
+        align-items: center;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    
+    .gsb-about-box {
+        
+        margin-bottom: 56px;
+    }
+    
+    .gsb-about-box h2 {
+        color: #CC5A5A;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 40px;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 35px;
+        
+    }
+    
+    .gsb-about-box p {
+        color: black;
+        font-weight: 400;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 114.7%;
+        text-decoration: none;
+        margin-bottom: 36px;
+    }
+    
+    .gsb-pallete-block {
+        background-color: #CC5A5A;
+        border-radius: 10px;
+        padding-top: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+        line-height: 16px;
+        width: 430px;
+        height: 150px;
+        position: relative;
+        margin-bottom: 35px;
+        
+    }
+    
+    .gsb-pallete-block p {
+        color: white;
+        font-weight: 400;
+    }
+    
+    .gsb-pallete-block ul {
+        color: white;
+        font-weight: 400;
+        padding-left: 0;
+    }
+    
+    .gsb-pallete-block li {
+        color: white;
+        font-weight: 400;
+        list-style-type: none;
+    
+    }
+    
+    .gsb-pallete-block-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    
+    .gsb-pallete-block-heading {
+         font-weight: 600;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 114.7%;
+    }
+    
+    .gsb-pallete-block-heading-accent{
+        font-family: 'AdleryBlockletter';
+        color: white;
+        font-size: 26px;
+        line-height: 18px;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    
+    .gsb-pallete-block-heading-accent-red-bold{
+        font-family: 'AdleryBlockletter';
+        color: #CC5A5A;
+        font-weight: 500;
+        font-size: 100px;
+        line-height: 114.7%;
+        /* or 110px */
+        text-transform: uppercase;
+    }
+    
+    .gsb-pallete-block-button {
+        position: absolute;
+        bottom: 10px;
+        border: 1px solid white;
+        height: 30px;
+        width: 110px;
+        display: table-cell;
+        border-radius: 10px;
+        text-align: center;
+        vertical-align: middle;
+        padding: 5px;
+        line-height: 16px;
+        min-width: 60px;
+    }
+    
+    .gsb-pallete-block-button a {
+        color: white;
+        text-transform: uppercase;
+         font-weight: 600;
+        font-size: 12px;
+        text-decoration: none;
+    }
+    
+    .gsb-news-block-header {
+        background-color: #254A9B;
+        width: 100%;
+    }
+    
+    .gsb-news-block-header h3 {
+        color: white;
+         font-weight: 600;
+        text-transform: uppercase;
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        
+    }
+    
+    .gsb-news-item {
+        position: relative;
+        /* background-color: #254A9B; */
+        height: 407px;
+       
+    }
+    
+    .gsb-news-item h2 {
+        position: absolute;
+        color: white;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding: 20px;
+        padding-bottom: 0;
+        z-index: 11;
+        bottom: 6px;
+        font-weight: 600;
+        font-size: 64px;
+        
+        width: 1000px;
+    
+    }
+    
+    .gsb-news-item span {
+        position: absolute;
+        color: white;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 16px;
+        z-index: 5;
+        bottom: 10px;
+        right: 20px;
+    }
+    
+    .gsb-news-img {
+        display: block;
+        max-width:100%;
+        max-height:400px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        
+    }
+    
+    .gsb-news-block {
+        margin: 58px 0 0 5px;
+    }
+    
+    .gsb-contacts-block {
+        margin-top: 50px;
+    }
+    
+    .gsb-contacts-block h1 {
+        color: black;
+         font-weight: 600;
+        text-transform: uppercase;
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+    
+    .gsb-contacts-block h2 {
+        color: black;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .gsb-contacts-block p {
+        color: black;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    
+    .gsb-contacts-block-avatar {
+        width: 280px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 100%;
+    }
+    
+    .gsb-contacts-block-details {
+        padding-top: 20px;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .gsb-contacts-block-details a {
+        text-decoration: none;
+    }
+    .gsb-contacts-block-details-contacts {
+        display: block;
+        
+        font-size: 22px;
+        font-weight: 400;
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    .gsb-contacts-block-details-contacts a {
+        color: black;
+     
+        
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    
+    .gsb-contacts-block-social-icon {
+        width: 130px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    .gsb-contacts-block-details-contacts-social {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+        height: 50px;
+    }
+    
+    .gsb-contacts-block-details-contacts-social a {
+        color: black;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 13px;
+        text-decoration: none;
+        text-align: center;
+        vertical-align: middle;
+        position: absolute;
+    }
+    
+    .gsb-contacts-block-details-social {
+        padding-top: 20px;
+        width: 50%;
+    
+        margin-right: auto;
+        display: block;
+    }
+    
+    .gsb-pallete-block-menu {
+        border: 2px solid #CC5A5A;
+        border-radius: 10px;
+        min-width: 230px;
+        position: relative;
+        min-height: 240px;
+    }
+    
+    .gsb-pallete-block-menu-col {
+        padding-bottom: 15px;
+        margin-bottom: 60px;
+    }
+    
+    .gsb-block h1 {
+         font-weight: 600;
+        text-transform: uppercase;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    
+    .gsb-block {
+        font-weight: 400;
+    }
+    
+    .gsb-light-pallete {
+        padding: 17px;
+        color: #CC5A5A;
+        font-weight: 400;
+    }
+    
+    
+    .gsb-light-pallete h1{
+        padding-bottom: 0px;
+    }
+    
+    .gsb-light-pallete a{
+        padding: 0;
+        margin-bottom: 10px;
+        color: #CC5A5A;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    
+    .gsb-light-pallete li{
+        list-style-type: none
+    }
+    
+    .gsb-light-pallete ul{
+        padding-left: 0;
+    }
+    
+    .gsb-action-block {
+        text-align: center;
+        position: relative;
+    
+    }
+    .gsb-action-block-2 {
+        text-align: center;
+        position: relative;
+        margin-top: 25px;
+    }
+    .gsb-action-block-2 a{
+        color: #CC5A5A;
+        font-weight: 900;
+        /* margin-bottom: 10px; */
+        margin-top: 10px;
+        font-weight: 900;
+        font-size:60px;
+        display: block;
+        
+    }
+    
+    .gsb-action-block a {
+        color: #CC5A5A;
+        font-weight: 900;
+        /* margin-bottom: 10px; */
+        margin-top: 15px;
+        font-weight: 900;
+        font-size:60px;
+        display: block;
+        
+        
+        
+    }
+    /* 
+    .gsb-action-block img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+        height: 380px;
+        margin-top: 35px;
+    } */
+    
+    .gsb-light-pallete p {
+        margin-bottom: 0;
+        padding-left: 10px;
+        font-weight: 400; 
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 114.7%;
+        color: #C94B57;
+    }
+    
+    .gsb-pallete-block-heading-red-bold {
+         font-weight: 600;
+        color: #CC5A5A;
+        font-size: 35px;
+        line-height: 35px;
+        text-transform: uppercase;
+    }
+    
+    .gsb-pallete-block-menu-blue {
+        background-color: #254A9B;
+        border-radius: 10px;
+        min-width: 230px;
+        position: relative;
+        min-height: 120px;
+        color: azure;
+    }
+    
+    .gsb-light-pallete-blue {
+        padding: 10px;
+        color: azure;
+        font-weight: 400;
+    }
+    
+    .gsb-light-pallete-blue h1{
+        padding-bottom: 0px;
+    }
+    
+    .gsb-light-pallete-blue a{
+        padding: 10px;
+        color: azure;
+        font-weight: 400;
+        text-transform: uppercase;
+        
+    }
+    
+    .gsb-light-pallete-blue li{
+        list-style-type: none
+    }
+    
+    .gsb-light-pallete-blue ul{
+        padding-left: 0;
+    }
+    
+    .gsb-light-pallete-blue p {
+        padding-bottom: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: azure;
+        font-weight: 400;
+    }
+    
+    .gsb-pallete-block-button-right {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        border: 1px solid white;
+        height: 30px;
+        width: 150px;
+        display: table-cell;
+        border-radius: 10px;
+        text-align: center;
+        vertical-align: middle;
+        padding: 5px;
+        line-height: 16px;
+        min-width: 60px;
+    }
+    
+    .gsb-pallete-block-button-right a {
+        color: white;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 12px;
+        text-decoration: none;
+    }
+    
+    .gsb-row {
+        padding-bottom: 20px;
+    }
+    
+    .height100percent {
+        height: 100%;
+    }
+    
+    .gsb-light-pallete-blue-content {
+    padding-left: 10px;
+    padding-right: 20px;
+    }
+    
+    
+    .gsb-calendar span{
+        color: #000;
+        text-transform: uppercase;
+         font-weight: 600;
+        font-size: 12px;
+        text-decoration: none;
+    }
+    
+    .gsb-calendar-month {
+        color: #CC5A5A;
+        text-transform: uppercase;
+         font-weight: 700;
+        font-size: 25px;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    .gsb-calendar-month-event-card {
+        background-color: rgba(15, 44, 102, 0.69);
+        height: 80px;
+        width: 320px;
+        position: relative;
+        display: table; 
+        overflow: hidden;
+        
+    
+    }
+    
+    .gsb-calendar-month-event-card p {
+        color: azure;
+        padding: 5px 0px 5px 10px;
+        font-weight: 400;
+        font-size: 18px;
+        display: table-cell; 
+        vertical-align: middle;
+        width: 240px;
+        line-height: 20px;
+    }
+    
+    .gsb-calendar-month-event-card-date {
+        color: azure;
+         font-weight: 700;
+        font-size: 40px;
+        display: table-cell; 
+        vertical-align: middle;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+    #valentin, #volleyball {
+        width: 210px;
+    }
+    #athletics {
+        width: 190px;
+    }
+    
+    .gsb-calendar-row {
+        padding-bottom: 5px;
+    }
+    
+    .gsb-action-question {
+        padding-top: 20px;
+    }
+    
+    .gsb-action-question a {
+        text-decoration: none;
+        color: #CC5A5A;
+    }
+    
+    .gsb-action-question h1 {
+        padding-bottom: 0px;
+    }
+    
+    .gsb-fwimg {
+        padding-bottom: 40px;
+        text-align: center;
+    }
+    
+    .gsb-fwimg img{
+        max-height:100%; 
+        max-width:100%;
+    }
+    
+    
+    
+    .gsb-team-contact {
+        padding-bottom: 25px;
+        width: 290px;
+        margin: 0 auto;
+    
+    }
+    
+    .gsb-team-contact h1 {
+        text-transform: none;
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(7,45,145,1) 0%, rgba(20,45,101,1) 0%, rgba(192,20,78,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      color: #CC5A5A;
+        text-align: center;
+         font-weight: 700;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 35px;
+        padding-bottom: 5px;
+        margin-bottom: 30px;
+    }
+    .cult__header{
+        font-size: 28px !important;
+    }
+    .gsb-team-contact h3 {
+        padding-top: 15px;
+        margin-bottom: 0;
+    }
+    .st__leader p {
+        padding-bottom: 5px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    
+    .gsb-align-center {
+        text-align: center;
+    }
+    
+    .gsb-block ul {
+        padding-left: 0;
+    }
+    
+    .gsb-block li {
+        list-style: none;
+        font-weight: 900;
+    }
+    
+    .gsb-text-block {
+        padding-bottom: 25px;
+    }
+    
+    .gsb-block-links {
+        /* text-align: center; */
+        padding-bottom: 20px;
+    }
+    
+    .gsb-block-links a {
+    
+        color: #000;
+         font-weight: 600;
+    }
+    .divider {
+        width: 922px;
+        height: 2px;
+        margin: 57px 0 0 0;
+        background-color: #fff;
+    }
+    
+    .main__header {
+        font-weight: 900;
+        font-size: 64px;
+        /* line-height: 114.7%; */
+        margin-bottom: 0;
+       
+    }
+    
+    .main__content {
+        position: absolute;
+        color: #fff;
+        z-index: 10;
+        margin-top: 37px;
+        margin-bottom: 48px;
+        width: 883px;
+    }
+    
+    .gsb-block-header {
+        
+        font-weight: 700;
+        font-size: 35px;
+        line-height:  40px;
+        text-transform: uppercase;
+        margin-bottom: 55px;
+      }
+    
+    #gsb-light-pallete-a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 114.7%;
+        /* or 41px */
+        font-weight: 400;
+        text-transform: none;
+        text-decoration-line: underline;
+        margin-top: 40px;
+        margin-bottom: 5px;
+        margin-left: 15px;
+        color: #C94B57;
+        display: block;
+        padding: 0;
+    }
+    #no-margin{
+        margin:0;
+        padding: 0;
+    
+    }
+    .rect1, .rect2, .rect3, .rect4, .rect5, .rect6, .rect7, .rect8, .rect9, .rect10, .rect11, .rect12 , .rect13 , .rect14 , .rect15 , .rect16 , .rect17 , .rect18 , .rect19 , .rect20 {
+        position: absolute;
+        border: 3px solid #C94B57;
+        display: inline-block;
+        z-index: -1;
+        
+    }
+    .rect1{
+        width: 42px;
+        height: 58px;
+        top: 40px;
+        left: 0;
+    }
+    .rect2{
+        width:90px;
+        height: 58px;
+        top: 40px;
+        left: 50px;
+    }
+    .rect3 {
+        width: 106px;
+        height: 58px;
+        left: 0;
+        top: 103px;
+    }
+    
+    .rect4 {
+        width: 80px;
+        height: 58px;
+        top: 103px;
+        left: 114px;
+    }
+    
+    .rect5{
+        width: 42px;
+        height: 58px;
+        top: 167px;
+        left:0;
+    }
+    
+    .rect6{
+        width: 90px;
+        height: 58px;
+        top: 167px;
+        left: 48px;
+    }
+    
+    .rect7 {
+        width: 50px;
+        height: 58px;
+        top: 167px;
+        left: 144px;
+    }
+    .rect8{
+        width: 80px;
+        height: 58px;
+        left:0;
+        top: 231px;
+    }
+    .rect9{
+        width: 41px;
+        height: 58px;
+        left: 86px;
+        top: 231px;
+    }
+    .rect10 {
+        width: 42px;
+        height: 58px;
+        top: 295px;
+        left: 0;
+    }
+    
+    .rect11 {
+        width: 80px;
+        height: 58px;
+        top: 295px;
+        left: 48px;
+    }
+    
+    .rect12 {
+        width: 106px;
+        height: 58px;
+        right: 145px;
+        top: 40px;
+    }
+    .rect13{
+        width: 106px;
+        height: 58px;
+        top: 40px;
+        right: 33px;
+    }
+    .rect14 {
+        width: 112px;
+        height: 58px;
+        right: 184px;
+        top: 103px;
+    }
+    .rect15{
+        top: 103px;
+        right:88px;
+        width: 90px;
+        height: 58px;
+    }
+    .rect16{
+        width: 50px;
+        height: 58px;
+        top: 103px;
+        right: 33px;
+    }
+    
+    .rect17 {
+        width: 116px;
+        height: 58px;
+        top: 167px;
+        right: 33px;
+    }
+    .rect18 {
+        width: 106px;
+        height: 58px;
+        top: 231px;
+        right: 77px;
+    }
+    .rect19{
+        width: 40px;
+        height: 58px;
+        top: 231px;
+        right: 33px;
+    }
+    .rect20{
+        width: 106px;
+        height: 58px;
+        top: 295px;
+        right: 33px;
+    }
+    
+    .gsb-light-pallete-subheader {
+        
+        font-style: normal;
+        font-weight: 600;
+        font-size: 35px;
+    }
+    .small-block-menu {
+        /* width: 600px; */
+        height: 364px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .small-block-menu-right {
+        margin-left: 35px;
+    }
+    .std-header{
+         font-weight: 600;
+        color: #CC5A5A;
+        font-weight: 600;
+        font-size: 96px;
+        line-height: 114.7%;
+        /* or 110px */
+        text-decoration-line: underline;
+    }
+    #mail-link{
+        
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 114.7%;
+        text-transform:lowercase;
+        padding-left: 10px;
+        display: inline-block;
+        margin-bottom: 0;
+        
+        
+    }
+    .img_mail{
+        width: 44px;
+        height: 44px;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .wrapper-p {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .link-menu {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 40px;
+        /* or 28px */
+    
+        text-decoration-line: underline;
+        text-transform: uppercase;
+    }
+    .gsb-button-main-dark{
+        background: rgba(0, 0, 0, 0.4);
+    }
+    .social__wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, auto));
+        grid-template-rows: repeat(2, 200px);
+        grid-auto-rows:  minmax(200px, auto);
+        column-gap: 48px;
+        row-gap: 40px;
+    }
+    .social__item {
+        display: flex;
+        justify-content: space-between;
+        flex-direction:column;
+        background-color: #254A9B;
+        border-radius: 13px;
+        padding: 15px;
+        text-transform: uppercase;
+    }
+    .social__header {
+        font-weight: 900;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 114.7%;
+        /* or 34px */
+        color: #FFFFFF;
+    }
+    .social__link {
+        border: 1px solid #FFFFFF;
+        border-radius: 13px;
+        width: 132px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .social__link a{
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 114.7%;
+        /* or 17px */
+        text-decoration-line: underline;
+        color: #FFFFFF;
+    }
+    
+    .social__main__header {
+        display: block;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 114.7%;
+        /* or 40px */
+        margin-bottom: 58px;
+        text-transform: uppercase;
+    }
+    .faq__main__header{
+        display: block;
+        margin-bottom: 90px;
+        font-size: 35px;
+    }
+    .faq__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 654px);
+        grid-template-rows: 364px 364px 364px 263px 263px 405px;
+        grid-auto-rows:  minmax(200px, auto);
+        column-gap: 43px;
+        row-gap: 35px;
+    }
+    .faq__item {
+        background: #C94B57;
+        border-radius: 13px;
+        padding: 12px 23px;
+        position: relative;
+    }
+    .faq__item__big {
+        grid-row: 4/6;
+    }
+    .faq__header {
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 114.7%;
+        /* or 40px */
+    
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+        }
+    .faq__text {
+        font-weight: 100; 
+        margin-top: 5px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 17px;
+        /* or 17px */
+        color: #FFFFFF;
+    }
+    .faq__text a {
+        color: #FFFFFF;
+    }
+    .faq__text ul{
+        list-style-type: none;
+        padding-left: 0;
+    }
+    .faq__text__20{
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .faq__text__18 {
+        font-size: 19px;
+        line-height: 23px;
+    }
+    .faq__ask {
+        display: block;
+        margin-top: 91px;
+    }
+    
+    .st__header {
+        
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 114.7%;
+        /* or 40px */
+    
+        text-transform: uppercase;
+    
+        color: #000000;
+    }
+    .st__img {
+        
+        width: 30px;
+        height: 30px;
+    }
+    .gsb-contacts-block-details-contacts div {
+        margin-bottom: 5px;
+    }
+    .fw-normal {
+         font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+    }
+    .fw-normal-ad{
+        font-size: 23px;
+        text-align: left;
+        margin-left: 45px;
+    }
+    .competition__text {
+        
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        margin-top: 20px;
+    }
+    .competition__text span {
+        font-weight: bold;
+    }
+    .competition__text ul {
+        padding-left: 36px;
+        
+    }
+    .competition__text ul li {
+        list-style: disc;
+    }
+    
+    .gsb-news-block-header h4 {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 114.7%;
+        /* or 34px */
+    
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+        padding: 7px;
+    }
+    .competition__title{
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 114.7%;
+        /* or 34px */
+        text-align: center;
+    
+        text-transform: uppercase;
+    
+        color: #254A9B;
+    }
+    .gsb-team-contact h4 {
+        font-weight:300;
+        font-size: 22px;
+        line-height: 114.7%;
+        /* or 41px */
+        text-align: left;
+    
+    
+        color: #000000;
+    }
+    .gsb-team-contact div {
+        font-weight:300;
+        font-size: 20px;
+        line-height: 114.7%;
+        /* or 41px */
+        text-align: left;
+        
+    
+        color: #000000;
+    }
+    .gsb-contacts-block-info {
+        padding-top: 20px;
+        width: 340px;
+       
+        margin-right: 0;
+        
+        display: block;
+    }
+    .gsb-contacts-block-info-contacts {
+        color: black;
+        text-decoration: none;
+        
+        margin-top: 20px;
+    }
+    .gsb-contacts-block-info-contacts a {
+        color: black;
+        padding-left: 7px;
+    }
+    .competition__link{
+         font-weight: 700;
+        
+        font-size: 28px;
+        line-height: 114.7%;
+        /* or 34px */
+        text-decoration-line: underline;
+        text-transform: uppercase;
+        color: #254A9B
+    }
+    .competition__block__link{
+        margin-top: 80px;
+        margin-bottom: 380px;
+    }
+    .studcouncil__header {
+         font-weight: 700;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 114.7%;
+        /* identical to box height, or 46px */
+    
+        text-transform: uppercase;
+        margin-bottom: 55px;
+    }
+    .studcouncil__link a{
+        font-weight: 100;
+        
+        font-weight: bolder;
+        font-size: 30px;
+        /* or 41px */
+        padding-left: 10px;
+        text-decoration-line: underline;
+    
+        color: #000000;
+    }
+    .studcouncil__img{
+        width: 40px;
+        height: 40px;
+       
+    }
+    .studcouncil__book {
+        margin-left: 10px;
+        margin-top: 40px;
+        margin-bottom: 70px;
+    }
+    .studcouncil__details{
+        margin-top: 35px;
+        width: 250px;
+        margin: 0 auto;
+        margin-top: 30px;
+        
+        
+    }
+    
+    .studcouncil__details p {
+        /* text-align: left; */
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 114.7%;
+        /* or 37px */
+        color: #000000;
+    }
+    .studcouncil__details_contacts{
+        text-align: center;
+    }
+    .studcouncil__details_contacts a{
+    
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 114.7%;
+        
+        color: #000000;
+    }
+    .studcouncil__title {
+        margin-top: 30px;
+        margin-bottom: 30px;
+         font-weight: 600;
+        text-align: center;
+        font-size: 22px;
+    }
+    #head_of_education {
+        margin-top: 5px;
+    }
+    #head_of_info {
+        margin-top: 25px;
+    }
+    .calendar__header{
+         font-weight: 700;
+        font-size: 35px;
+        line-height: 114.7%;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 87px;
+    }
+    .curators {
+        display:none;
+        position: absolute;
+        top:45%;
+        left: 5%;
+    }
+    .curators-gsb{
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 114.7%;
+        /* identical to box height, or 28px */
+    
+        text-decoration-line: underline;
+        text-transform: uppercase;
+    
+        color: #CC5A5A;
+    }
+    .curators-gsb:hover .curators{
+        display: block;
+        z-index: 10;
+    }
+    .curators__block {
+        width: 500px;
+        min-height: 656px;
+        border: 3px solid #C94B57;
+        border-radius: 0px 36px 36px 36px;
+        padding: 14px;
+        background:#fff;
+    }
+    .curators__item {
+        height: 144px;
+        display: grid;
+        grid-template-columns: 100px 350px;
+        column-gap: 12px;
+        margin-top: 19px;
+    }
+    .curators__info {
+        font-weight:300;
+        font-size: 20px;
+        line-height: 95.2%;
+        text-align: center;
+        color: #C94B57;
+    }
+    .curators__name{
+        margin-top: 3px;
+    }
+    .curators__class{
+        margin-top: 6px;
+    }
+    .curators__info img {
+        width: 65px;
+        height: 65px;
+        border-radius: 100%;
+    
+    }
+    .curators__link{
+        margin-top: 5px;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 95.2%;
+        /* identical to box height, or 19px */
+        color: #C94B57;
+        margin-left: 20px;
+    }
+    .curators__link a{
+        color: #C94B57;
+        text-decoration: none;
+    
+    }
+    .curators__tg img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    
+    .curators__tg p{
+        display: inline;
+        font-size: 20px;
+    }
+    .curators__email img{
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+    }
+    .curators__email {
+        margin-top: 10px;
+    }
+    .curators__programe{
+        margin-top: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .slick-slider{
+        min-width: 0;
+    }
+    .slick-track{
+        display: flex;
+        align-items: flex-start;
+    }  
+    .slick-list {
+    
+        overflow: hidden;
+    
+    }     
+    .slider__item {
+        padding: 0px 15px;
+        
+    }
+    
+    .slider__item img{
+       
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+    }
+    .slider {
+        position: relative;
+        padding: 0px 60px; 
+        margin-top: 50px;
+    }
+    
+    .slider .slick-arrow{
+        position: absolute;
+        top: 50%; 
+        margin: -15px 0 0 0; 
+        z-index: 2; 
+        font-size: 0; 
+        width: 30px; 
+        height: 30px; 
+      }
+    .prev {
+        left: 100px;
+        background: url('https://admin.bot.crossbordervpn.ru/images/img/right-arrow.png') 0 0 / 100% no-repeat;;
+    
+    }
+    .next {
+        right: 100px;
+        background: url('https://admin.bot.crossbordervpn.ru/images/img/right-arrow1.png') 0 0 / 100% no-repeat;;
+    }
+    .slider__item h2 {
+        font-weight: 900;
+        font-size: 54px;
+        line-height: 114.7%;
+        /* or 73px */
+        position: absolute;
+        text-transform: uppercase;
+        top: 60%;
+        left: 30px;
+    
+    color: #FFFFFF;
+    }
+    .gsb-main-pallete-block {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 430px 430px;
+        grid-template-rows: 150px 150px;
+        row-gap: 55px;
+        column-gap: 135px;
+        margin-bottom: 63px;
+    }
+    
+    .link__tg {
+        margin-top: 10px;
+    }
+    .padding__no{
+        padding-top: 0 !important;
+    }
+    .faq__request {
+        max-width: 280px;
+        max-height: 36px;
+    
+        border: 1px solid #FFFFFF;
+        border-radius: 13px;
+        text-align: center;
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 4%;
+        bottom: 4%;
+       
+    }
+    .faq__request__text{
+        margin-bottom: 50px;
+    }
+    .faq__else {
+        text-align: center;
+    }
+    .studcouncil__link__bottom {
+       
+        /* identical to box height, or 46px */
+        margin-top: 70px;
+        margin-bottom: 70px;
+        text-align: center;
+        
+    }
+    .studcouncil__link__bottom a{
+         font-weight: 700;
+        
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 114.7%;
+        /* identical to box height, or 46px */
+    
+        text-align: center;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+    
+        color: #C94B57;
+    }
+    @media(min-width: 1440px) {
+        .carousel-img {
+            width: 100%;
+        }
+        .gsb-calendar-month-event-card {
+            height: 80px;
+            width: 280px;
+        }
+        .gsb-calendar-month-event-card-date {
+            font-size: 24px;
+        }
+        .gsb-calendar-month-event-card p {
+            width: 180px;
+            font-size: 16px;
+        }
+        #athletics {
+            width: 170px;
+        }
+        #valentin, #volleyball {
+            width: 180px;
+        }
+    }
+    @media(max-width: 1440px) {
+        .gsb-calendar-month-event-card {
+            height: 80px;
+            width: 250px;
+        }
+        .gsb-calendar-month-event-card-date {
+            font-size: 24px;
+        }
+        .gsb-calendar-month-event-card p {
+            width: 180px;
+            font-size: 16px;
+        }
+        #athletics {
+            width: 170px;
+        }
+        #valentin, #volleyball {
+            width: 180px;
+        }
+        .faq__wrapper {
+            
+            grid-template-columns: repeat(2, minmax(300px, 654px));
+        }
+        .faq__header {
+            font-size: 32px;
+        }
+        .faq__text__18 {
+            font-size: 18px;
+        }
+    }
+    
+    @media (max-width: 1200px){
+         .slider__item h2 {
+            top:55%;
+            font-size: 45px;
+        } 
+        .gsb-pallete-block-heading-accent-red-bold {
+            font-size: 80px;
+        }
+        .gsb-light-pallete-subheader {
+            font-size: 32px;
+        }
+        .social__header {
+            font-size: 24px;
+        }
+        .social__wrapper {
+            grid-template-rows: repeat(2, 170px);
+            grid-auto-rows: minmax(170px, auto);
+        }
+        .faq__main__header {
+            margin-bottom: 70px;
+        }
+        .faq__header {
+            font-size: 24px;
+        }
+        .faq__wrapper{
+            grid-template-rows: 415px 280px 320px 263px 263px 405px;
+        }
+        .faq__text__20 {
+            font-size: 17px;
+            line-height: 20px;
+        }
+        .faq__text__18 {
+            font-size: 17px;
+            line-height: 20px;
+        }
+        .faq__ask {
+            
+            margin-top: 50px;
+        }
+       
+       
+    }
+    @media (max-width: 992px){
+        .container {
+            max-width: 720px;
+            
+        }
+        .gsb-contacts-block-info {
+            margin-left: 0px;
+        }
+        .carousel-item {
+            width: 991px;
+            height: 370px;
+        }
+        .carousel-item img {
+            max-width: 991px;
+        }
+        .main__header {
+            font-size: 47px;
+            
+        }
+        .main__content {
+            width: 700px;
+            margin-top: 20px;
+            
+        }
+        .gsb-slogan h4 {
+            margin-top: 15px;
+            font-size: 26px;
+        }
+        .divider {
+            width: 670px;
+        }
+        .gsb-about-box h2{
+            font-size: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .gsb-about-box p{
+            margin-bottom: 15px;
+            
+        }
+        .gsb-pallete-block {
+            width: 300px;
+        }
+        .gsb-pallete-block-heading {
+            font-size: 24px;
+        }
+        .gsb-main-pallete-block {
+            grid-template-columns: 300px 300px;
+            column-gap: 55px;
+        }
+        .gsb-pallete-block-heading {
+            font-size: 20px;
+        }
+         .slider__item h2 {
+            top:55%;
+            font-size: 30px;
+        } 
+        .gsb-block-header{
+            font-size: 30px;
+            margin-bottom: 45px;
+        }
+        .gsb-action-block {
+            padding: 0;
+            text-align: left;
+            width: 650px;
+            margin-left: 35px;
+        }
+        .gsb-action-block a{
+            margin-top: 0;
+        }
+        /* .gsb-light-pallete{
+            width: 658px;
+        }
+        */
+        .small-block-menu-right {
+            margin-left: 0;
+        }
+        .gsb-pallete-block-menu-col {
+            margin-bottom: 20px;
+        }
+        .social__wrapper {
+            grid-template-rows: repeat(3, 170px);
+            grid-template-columns: repeat(2, minmax(200px, auto));
+            grid-auto-rows: minmax(170px, auto);
+        }
+        .studcouncil__link a{
+            font-size: 20px;
+        }
+        #head_of_education {
+            margin-top: 0px;
+        }
+        /* .studcouncil__link {
+            width: 35px;
+            height: 35px;
+        }
+         */
+         .faq__wrapper {
+            grid-template-rows: 490px 360px 430px 320px 380px 455px;
+            row-gap: 25px;
+            column-gap: 25px;
+         }
+         .faq__text__16{
+            font-size: 16px;
+            line-height: 18px;
+        
+        }
+        .gsb-contacts-block-details {
+            width: unset;
+        }
+    
+    }
+    @media (max-width: 768px){
+        .container {
+            max-width: 540px;
+        }
+        .carousel-item {
+            width: 768px;
+           
+        }
+        .carousel-item img {
+            max-width: 768px;
+        }
+        
+        .main__header{
+            font-size: 38px;
+        }
+        .main__content {
+            width: 540px;
+            margin-top: 20px;
+            
+        }
+        .gsb-slogan h4 {
+            margin-top: 10px;
+            font-size: 22px;
+            margin-bottom: 0;
+        }
+        .divider {
+            display: none;
+        }
+        .gsb-button-main {
+            width: 220px;
+            height: 52px;
+        }
+        .gsb-button-main-inner {
+            font-size: 14px;
+        }
+        .carousel-item {
+            width: 768px;
+            height: 288px;
+        }
+        .header-nav {
+            margin-right: 0;
+        }
+        .gsb-pallete-block {
+            width: 250px;
+        }
+        .gsb-main-pallete-block {
+            grid-template-columns: 250px 250px;
+            column-gap: 25px;
+            row-gap: 25px;
+        }
+        .slider {
+            display: none;
+        }
+        .news {
+            margin-bottom: 50px;
+        } 
+        .gsb-block-header{
+            margin-bottom: 30px;
+        }
+        .gsb-action-block {
+            margin-left: 15px;
+        }
+        .gsb-pallete-block-heading-accent-red-bold {
+            font-size: 65px;
+        }
+        .gsb-light-pallete{
+            padding: 12px;
+        }
+        .gsb-action-block a {
+            font-size: 40px;
+        }
+        #gsb-light-pallete-a {
+            margin-top: 25px;
+            font-size: 32px;
+        }
+        .std-header{
+            font-size: 60px;
+        }
+        .row {
+            margin-right: 0;
+        }
+        .social__main__header {
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+        .social__wrapper {
+            column-gap: 20px;
+            grid-template-rows: repeat(3, 150px);
+        }
+        .social__header {
+            font-size: 20px;
+        }
+        .gsb-calendar-month-event-card {
+           
+            width: 240px;
+        }
+        .studcouncil__header {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .studcouncil__book{
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+        .faq__wrapper {
+            grid-template-columns:  minmax(280px, 540px);
+            grid-template-rows: auto;
+        }
+        .faq__main__header {
+            margin-bottom: 50px;
+        }
+        .faq__text{
+            font-size: 18px !important;
+        }
+        .st__header {
+            font-size: 28px;
+        }
+        .gsb-news-block-header h4 {
+            font-size: 20px;
+        }
+        .competition__title {
+            font-size: 20px;
+        }
+        .gsb-fwimg {
+            padding-bottom: 0px;
+           
+        }
+        .faq__request {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+    
+           
+        }
+        .faq__request__text{
+            margin-bottom: 50px;
+        }
+        
+    
+    }
+    
+    @media (max-width: 576px){
+        .container {
+            width: 100%;
+            padding: 0 10px;
+        }
+        .carousel-item {
+            width: 100%;
+            height: 120px;
+           
+        }
+        .carousel-item img {
+            max-width: 100%;
+        }
+        .header-nav li {
+            font-size: 12px;
+        }
+        .header-nav li a {
+            margin-right: 10px;
+        }
+        .main__content {
+            width: 95%;
+            margin-top: 15px;
+        }
+        .main__header{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .gsb-slogan h4 {
+            display: none;
+        }
+        .gsb-button-main {
+            margin-top: 15px;
+            width: 42%;
+            height: 40px;
+            padding: 6px 10px;
+            position: absolute;
+            top: 100%;
+            margin-bottom: 20px;
+            background-color: #CC5A5A;
+            
+        }
+        .gsb-button-main-inner{
+            line-height: 15px;
+            
+        }
+        .gsb-button-main-inner a{
+            font-size: 9px;
+            line-height: 8%;
+            color:azure;
+        }
+       .gsb-main-pallete-block {
+           grid-template-columns: 250px;
+           grid-auto-rows: auto;
+           
+           column-gap: 0px;
+    
+       }
+       .gsb-pallete-block {
+        margin-bottom: 0px;
+       }
+       .gsb-team-contact h4 {
+           font-size: 18px;
+       }
+       .gsb-team-contact div {
+        font-size: 16px;
+        }
+        .gsb-contacts-block-info{
+            margin-left: 15px;
+        }
+        .gsb-contacts-block-social-icon {
+            width: 40px;
+            height: 40px;
+            display: inline;
+        }
+        .gsb-contacts-block-details-contacts {
+            display: inline;
+        }
+        .gsb-contacts-block-details-contacts a {
+            font-size: 16px;
+        }
+        .gsb-contacts-block {
+            margin: 0 auto;
+        }
+        .gsb-contacts-block-social-icon{
+            margin-left: 25px;
+            margin-right: 5px;
+        }
+        .gsb-about-box h2 {
+            margin-top: 30px;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .gsb-about-box p {
+            font-size: 16px;
+        }
+        .gsb-contacts-block-info {
+            width: 280px;
+        }
+        .row {
+            margin-right: 0;
+        }
+        .gsb-block-header{
+            margin-top: 55px;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        #myCarousel8 .gsb-button-main {
+            background-color: #254A9B;
+        }
+        .gsb-pallete-block-heading-accent-red-bold {
+            font-size: 50px;
+        }
+        .gsb-light-pallete p {
+            font-size: 18px;
+        }
+        #gsb-light-pallete-a {
+            margin-top: 15px;
+            font-size: 20px;
+        }
+        .rect1, .rect2, .rect3, .rect4, .rect5, .rect6, .rect7, .rect8, .rect9, .rect10, .rect11, .rect12 , .rect13 , .rect14 , .rect15 , .rect16 , .rect17 , .rect18 , .rect19 , .rect20 {
+            display: none;
+        }
+        .gsb-news-img {
+            height: 230px;
+        }
+        .gsb-action-block{
+            margin-left: 0;
+            text-align: center;
+        }
+        .gsb-action-block a {
+            font-size: 20px;
+            
+        }
+        .gsb-light-pallete-subheader {
+            font-size: 24px;
+        }
+        /* .gsb-light-pallete a {
+            font-size: 20px;
+        } */
+        .small-block-menu {
+            /* width: 600px; */
+            height: auto;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        .curators-gsb{
+            font-size: 18px;
+            line-height: 0px;
+        }
+        .std-header {
+            font-size: 22px;
+        }
+        .link-menu {
+            font-size: 16px;
+            line-height: 25px;
+        }
+        #mail-link {
+            font-size: 20px;
+        }
+        .img_mail{
+            width: 35px;
+            height: 35px;
+        }
+        .gsb-pallete-block-menu-col {
+            margin-left: 5px;
+        }
+        .curators__block {
+            width: 250px;
+            max-height: 456px;
+            min-height: 456px;
+        }
+        .curators__item {
+            height: 100px;
+            display: grid;
+            grid-template-columns: 50px 150px;
+            column-gap: 5px;
+            margin-top: 5px;
+        }
+        .curators__info {
+           
+            font-size: 10px;
+            
+        }
+        .curators__class {
+            margin-top: 3px;
+        }
+        .curators__info img {
+            width: 45px;
+            height: 45px;
+        }
+        .curators__link {
+            margin-top: 3px;
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 95.2%;
+            color: #C94B57;
+            margin-left: 10px;
+        }
+        .curators__tg p {
+            display: inline;
+            font-size: 10px;
+        }
+        .curators__email {
+            margin-top: 5px;
+        }
+        .curators__programe {
+            margin-top: 5px;
+           
+        }
+        .curators__tg img {
+            width: 12px;
+            height: 12px;
+            margin-right: 3px;
+        }
+        .curators__email img {
+            width: 12px;
+            height: 12px;
+            margin-right: 3px;
+        }
+        .curators__link a {
+            font-size: 8px;
+        }
+        #myCarousel3 .gsb-button-main {
+            background-color: rgba(248, 180, 161);
+        }
+        .social__main__header {
+            font-size: 20px;
+            margin-bottom: 20px;
+            margin-top: 60px;
+        }
+        .social__wrapper {
+            row-gap: 20px;
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: 250px;
+            grid-auto-rows: 100px;
+            justify-content: center;
+            margin-bottom: 30px;
+    
+        }
+        .social__header {
+            font-size: 16px;
+        }
+        .social__link {
+            width: 100px;
+            height: 25px;
+        }
+        .social__link a {
+            font-size: 10px;
+        }
+        .calendar__header {
+            margin-top: 70px;
+            font-size: 20px;
+            line-height: 114.7%;
+            text-transform: uppercase;
+            color: #000000;
+            margin-bottom: 50px;
+        }
+        .gsb-calendar-row {
+            margin-left: 15%;
+        }
+        .studcouncil__header {
+            font-size: 20px;
+            margin-bottom: 20px;
+            margin-top: 70px;
+        }
+        .studcouncil__img {
+            width: 20px;
+            height: 20px;
+        }
+        .studcouncil__link a {
+            font-size: 16px;
+        }
+        .faq__main__header {
+            margin-bottom: 20px;
+            font-size: 20px;
+            margin-top: 60px;
+        }
+        .faq__header {
+            font-size: 18px;
+        }
+        .faq__text{
+            font-size: 16px !important;
+        }
+        .faq__ask {
+            margin-top: 20px;
+            font-size: 20px ;
+        }
+        .faq__ask h2 {
+           
+            font-size: 20px ;
+        }
+        .st__header {
+            font-size: 20px;
+            margin-top: 60px;
+        }
+        .st__header_mini{
+            margin-top: 0 !important;
+        }
+        .gsb-team-contact h1 {
+            font-size: 25px;
+            line-height: 28px;
+            margin-bottom: 10px;
+        }
+        .st__leader p {
+            padding-bottom: 5px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .gsb-contacts-block-avatar {
+            width: 230px;
+            height: auto;
+        }
+        .gsb-team-contact h3 {
+            padding-top: 10px;
+            margin-bottom: 0;
+            font-size: 18px;
+        }
+        .gsb-team-contact div {
+            font-size: 14px;
+           
+        }
+        /* .gsb-contacts-block-details{
+            width: 200px;
+        } */
+        .gsb-contacts-block-info {
+            width: 200px;
+        }
+        .gsb-contacts-block-info-contacts{
+            margin-top: 10px;
+        }
+        .st__img{
+            width: 20px;
+            height: 20px;
+        }
+        .link__tg img {
+            width: 20px;
+            height: 20px;
+        }
+        .competition__text {
+            font-size: 14px;
+            margin-top: 30px;
+        }
+        .competition__text p {
+            margin-bottom: 10px;
+        }
+        .competition__text__mini {
+            margin-top: 10px !important;
+        }
+        .gsb-news-block-header h4 {
+            font-size: 16px;
+        }
+        .gsb-team-contact h3 {
+            
+            font-size: 16px;
+        }
+    }
+    
+        </style>
+        
+        
+    </head>
+
+<body>
+    <nav class="header-nav">
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="" href="https://gsb.hse.ru/student/calendar">Календарь событий</a>
+            </li>
+            <li class="nav-item">
+              <a class="" href="https://www.hse.ru/adm/_/org/hse/edu/bm/student#news">Новости</a>
+            </li>
+            <li class="nav-item">
+              <a class="" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+    </nav>
+    <main>
+        <!-- Основной блок -->
+        <div>
+            <div id="myCarousel1" class="carousel slide"  data-bs-ride="carousel">
+               
+                <div class="container">
+                    <div class="text-start gsb-slogan main__content">
+                        <h1 class="main__header">Студенческая жизнь <br> высшей школы бизнеса</h1>
+                        <h4 class="gsb-row">Воплощая идеи в реальность!</h4>
+                        <div class="divider"></div>
+                        <div class="gsb-button-block">
+                            <div class="row">
+                                <div class="col-6 col-sm-6 col-md-5 col-xl-5 col-xxl-4 gsb-row">
+                                        <div class="gsb-button-main">
+                                            <div class="gsb-button-main-inner">
+                                                <a class="" href="https://gsb.hse.ru/student/faq">Часто задаваемые
+                                            вопросы </a>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-5 col-xl-5 col-xxl-4 gsb-row offset-lg-1">
+                                    <div class="gsb-button-main">
+                                        <div class="gsb-button-main-inner">
+                                            <a class="" href="mailto:rgareeva@hse.ru" target="_blank">Остались вопросы? Напиши нам</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-inner carousel-container">
+                    <div class="carousel-item  active">
+                        <img src="https://admin.bot.crossbordervpn.ru/images/Telegram Archive/car_6.png" class=" carousel-img" alt="альтернативный текст">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="https://admin.bot.crossbordervpn.ru/images/Telegram Archive/car_7.png" class=" carousel-img" alt="альтернативный текст">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="https://admin.bot.crossbordervpn.ru/images/Telegram Archive/car_8.png" class=" carousel-img" alt="альтернативный текст">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="https://admin.bot.crossbordervpn.ru/images/Telegram Archive/car_9.png" class=" carousel-img" alt="альтернативный текст">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://admin.bot.crossbordervpn.ru/images/img/car_1.png" class=" carousel-img" alt="альтернативный текст">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="https://admin.bot.crossbordervpn.ru/images/img/car_2_test.png" class="carousel-img" alt="альтернативный текст">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="https://admin.bot.crossbordervpn.ru/images/img/car_4.png" class=" carousel-img" alt="альтернативный текст">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://admin.bot.crossbordervpn.ru/images/Telegram%20Archive/car_10.png" class=" carousel-img" alt="альтернативный текст">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container gsb-block gsb-text-block">
+                <div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="competition__text">
+                                <p>
+                                    Начиная с июля 2020 года в Высшей школе бизнеса организуются конкурсы проектов студенческих групп.
+                                <p>Проекты отражают не только навыки и интересы студентов, но и являются инструментом коммуникации и обмена опытом. </p>
+                                </p>
+                                <p>К работе в студенческих командах приглашаются <span>не только студенты ВШБ</span>, но и студенты других факультетов и школ НИУ ВШЭ.</p>
+                                <p>В 2020/2021 учебном году победителями стали <span>39 проектов</span>. </p>
+                                <p>В 2021/2022 учебном году в первом наборе <span>15 проектов</span> получили поддержку Высшей школы бизнеса.</p>
+                                <p><span>В 2022 году прием заявок начнется в сентябре.</span></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="competition__text competition__text__mini">
+                                <p><span>Направления проектов, на которые можно подать заявку:</span></p>
+                                <ul>
+                                    <li>научно-исследовательское,</li>
+                                    <li>образовательное,</li>
+                                    <li>предпринимательское,</li>
+                                    <li>волонтерское,</li>
+                                    <li>спортивное,</li>
+                                    <li>урбанистическое,</li>
+                                    <li>культурно-досуговое,</li>
+                                    <li>социальное,</li>
+                                    <li>экологическое.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="competition__text competition__text__mini">
+                                <p><strong>Проектная группа — это:</strong></p>
+                                <ul>
+                                    <li>минимум 5 человек,</li>
+                                    <li>все — учащиеся Вышки,</li>
+                                    <li>участники из любых подразделений Вышки, но руководитель должен быть студентом ВШБ,</li>
+                                    <li>один человек может руководить только одним проектом,</li>
+                                    <li>один человек может участвовать сразу в нескольких группах</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+                <div class="gsb-news-block-header">
+                    <h4 class="gsb-align-center">Этапы конкурса студенческих инициатив</h4>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-12 gsb-fwimg">
+                            <img src="https://admin.bot.crossbordervpn.ru/images/img/competition.png" />
+                        </div>
+
+                        <div class="col-md-6 gsb-row gsb-contacts-block">
+                            <div class="gsb-team-contact">
+                                <h3 class="competition__title">Координатор конкурса <br> студенческих проектов</h3>
+                                <p class="gsb-team-label"></p>
+                                <img src="https://admin.bot.crossbordervpn.ru/images/img/regina.png" class="gsb-contacts-block-avatar">
+                                <div class="gsb-contacts-block-info">
+                                    <h4>Гареева Регина Анисовна</h4>
+                                    <div>Начальник отдела по работе <br> со студентами</div>
+                                    <div class="gsb-contacts-block-info-contacts">
+                                        <div>
+                                            <img class="st__img" src="https://admin.bot.crossbordervpn.ru/images/img/email.png" alt="email">
+                                            <a href="mailto:rgareeva@hse.ru">rgareeva@hse.ru</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="gsb-block">
+                        <div class="competition__block__link">
+                            <a href="#"><p class="competition__link">Положение реализации конкурса студенческих инициатив</p></a>
+                        </div>
+                        
+                    </div> -->
+                    
+                </div>
+            </div>
+        </div>
+        
+
+        
+        <!--Блок с контактами -->
+        <div class="container">
+            <div class="row justify-content-md-center gsb-contacts-block">
+                <h1 id="contacts">Свяжитесь с нами</h1>
+                <div class="col-md-6 col-lg-6 gsb-row">
+                    <div class="gsb-team-contact">
+                        <p class="gsb-team-label"></p>
+                        <img src="https://admin.bot.crossbordervpn.ru/images/img/regina.png" class="gsb-contacts-block-avatar">
+                        <div class="gsb-contacts-block-info">
+                            <h4>Гареева Регина Анисовна</h4>
+                            <div>Начальник отдела по работе <br> со студентами</div>
+                            <div class="gsb-contacts-block-info-contacts">
+                                <div>
+                                    <img class="st__img" src="https://admin.bot.crossbordervpn.ru/images/img/email.png" alt="email">
+                                    <a href="mailto:rgareeva@hse.ru">rgareeva@hse.ru</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 gsb-row">
+                    <div class="gsb-team-contact">
+                        
+                        <p class="gsb-team-label"></p>
+                        <img src="https://admin.bot.crossbordervpn.ru/images/img/eliza.png" class="gsb-contacts-block-avatar">
+                        <div class="gsb-contacts-block-info">
+                            <h4>Матвеева Елизавета Дмитриевна</h4>
+                            <div>Менеджер отдела по работе <br> со студентами</div>
+                            <div class="gsb-contacts-block-info-contacts">
+                                <div>
+                                    <img class="st__img" src="https://admin.bot.crossbordervpn.ru/images/img/email.png" alt="email">
+                                    <a href="mailto:edmatveeva@hse.ru">edmatveeva@hse.ru</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row justify-content-md-center gsb-contacts-block">
+                        <div class="col-sm-12 col-md-4 col-lg-3 gsb-row gsb-contacts-block-item">
+                            <img src="https://admin.bot.crossbordervpn.ru/images/img/email.png" class="gsb-contacts-block-social-icon">
+                            <div class="gsb-contacts-block-details-contacts">
+                                <a href="mailto:studteamgsb@hse.ru" target="_blank">studteamgsb@hse.ru</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-3 gsb-row gsb-contacts-block-item">
+                            <img src="https://admin.bot.crossbordervpn.ru/images/img/tg.png" class="gsb-contacts-block-social-icon">
+                            <div class="gsb-contacts-block-details-contacts">
+
+                                <a href="https://t.me/studteam_gsb" target="_blank">StudTeamGSB в Telegram</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-3 gsb-row gsb-contacts-block-item">
+                            <img src="https://admin.bot.crossbordervpn.ru/images/img/vk.png" class="gsb-contacts-block-social-icon">
+                            <div class="gsb-contacts-block-details-contacts">
+                       
+                                <a href="https://vk.com/studteamgsb" target="_blank">StudTeamGSB в VK</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+
+</html>
